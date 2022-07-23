@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 75%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: grey;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    color: white
+}
+header h1 {
+    display:flex;
+    text-transform: capitalize;
+    font-size: 3rem;
+    margin: 1rem;
+}
+header p {
+    display: flex;
+    font-size: 2rem;
+    margin: 10px 10px 40px 10px;
+}
+
+.contenedor_figura_geometrica {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    border: solid black 1px;
+    min-width: 320px;
+    padding-bottom: 50px;
+}
+.figura_geometrica {
+    width: 280px;
+    min-width: 280px;
+    padding-top: 60px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    
+}
+@media (max-width: 900px) {
+    .contenedor_figura_geometrica {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+
+.contenedor_figura_geometrica .figura_geometrica img {
+    width: 90px;
+    height: 90px;
+    align-self: center;
+    padding-bottom: 15px;
+}
+
+.contenedor_figura_geometrica .figura_geometrica h2{
+    text-align: center;
+    margin-bottom: 25px;
+
+}
+.contenedor_figura_geometrica .figura_geometrica form{
+    font-size: 1.6rem;
+    text-align: center;
+    
+}
+.contenedor_figura_geometrica .figura_geometrica input{
+    margin: 10px 0 10px 0;
+}
