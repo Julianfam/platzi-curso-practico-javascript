@@ -101,21 +101,50 @@ function calcularPerimetroTriangulo(){
 
 
 function calcularAreaTriangulo(){
+//toca cambiar inputAltura para que tome la ecuación de altura de la funcion calcularAlturaTrianguloIsoceles//
     const height = document.getElementById("inputAltura");
-    const inputAltura = number(height);
+    const altura = height.value;
+    const inputAltura = alturaTrianguloIsoceles(2,3,4) * 1;
    
 
-    const base = document.getElementById("inputBase");
-    const  inputBase = numer(base);
+    const base = document.getElementById("inputTriangulo3");
+    const base1 = base.value;
+    const inputBase = base1 * 1;
 
-    // const area = areaTriangulo(input,input2,input3);    
-
-      
+ 
     const area = areaTriangulo(inputAltura, inputBase);
-    
-   
     alert(area);
+}
 
+//está es la funcion altura //
 
+function alturaTrianguloIsoceles(ladoA,ladoB,base){
+    if(ladoA===ladoB && ladoA != base){
+        //acá va la operacion para calcular la altura
+        const height = Math.sqrt(ladoA**2 - (base**2 / 4));
+        alert(height);
+    }
+    else {
+        alert("Valores incorrectos, vuelve a ingresarlos");
+    }
 
 }
+//acá va la interacción con altura// 
+function calcularAlturaTrianguloIsoceles(){
+    const input = document.getElementById("inputTriangulo1");
+    const value1 = input.value;
+    const value11 = value1 * 1;
+    
+    const input2 = document.getElementById("inputTriangulo2");
+    const value2 = input2.value;
+    const value22 = value2 * 1 ;
+
+    
+    const input3 = document.getElementById("inputTriangulo3");
+    const value3 = input3.value;
+    const value33 = value3 * 1;
+
+    const altura = alturaTrianguloIsoceles(value11, value22, value33);
+
+    alert(altura) ;
+} 

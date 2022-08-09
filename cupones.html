@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/cupones.css">
+    <title>Cupones Para Tu Tienda</title>
+</head>
+<body>
+    <header>
+        <h1>CUPONES</h1>
+        <p>Esto es una aplicación para reclamar cupones</p>
+    </header>
+    <main>
+        
+        <form action="">
+            <label for="Price" id="inputPrice">Ingresa precio de Producto</label>
+            <input type="number" name="valuePrice" id="Price">
+            
+            <label for="cuponNumberTxt" id="cuponNumber">Ingresa codigo de cupón</label>
+            <input type="text" name="cuponNumberName" id="cuponNumberTxt">
+
+
+            <button type="button" onclick="onClickButtonPriceDiscount()">Reclama tu Cupon</button>
+        </form>
+
+        <p id="resultP"> </p>
+        <p id="pracioConCupon"> </p>
+    </main>
+
+<script src="/cupones.js"></script>
+</body>
+</html>
